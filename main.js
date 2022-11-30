@@ -328,6 +328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 4666);
 /* harmony import */ var _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../projects/ngx-barcode-scanner/src/lib/ngx-barcode-scanner.component */ 1377);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 4534);
 /* harmony import */ var _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./top-bar/top-bar.component */ 4097);
 
 
@@ -335,8 +336,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function AppComponent_p_11_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "p", 8);
+
+function AppComponent_p_17_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "p", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, "Barcode scan is not available.");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } }
@@ -347,6 +349,7 @@ class AppComponent {
         this.isError = false;
         this.scannerSichtbar = true; //Schalter um Video Livestream ein- oder aus zu blenden
         //disableScroll.on(); //Deaktiviert scrollen, falls nicht erwünscht
+        this.data.currentMessage.subscribe(message => this.message = message); //Bis jetzt noch Platzhalter, hier muss REST Aufruf hin
     }
     onError(error) {
         console.error(error);
@@ -360,42 +363,52 @@ class AppComponent {
     }
     abschicken() {
         console.log('ID Säule:');
-        this.data.currentMessage.subscribe(message => this.message = message); //Bis jetzt noch Platzhalter, hier muss REST Aufruf hin
         console.log(this.message);
         console.log('Barcode:');
         console.log(document.getElementById("inputBarcodeScanner").value); //Inhalt des Matinputfield wird hier abgerufen
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_0__.DataService)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 14, vars: 6, consts: [[1, "content"], ["for", "inputPassword5", 1, "form-label"], ["type", "text", "id", "inputBarcodeScanner", "aria-describedby", "passwordHelpBlock", 1, "form-control", 3, "value"], ["id", "passwordHelpBlock", 1, "form-text"], [1, "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], ["style", "color:red", 4, "ngIf"], [3, "value", "codes", "errorThreshold", "valueChange", "exception"], [2, "color", "red"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "app-top-bar");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 0)(2, "label", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Barcode");
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 20, vars: 8, consts: [[1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], [1, "content"], [3, "dismissible"], ["for", "inputPassword5", 1, "form-label"], ["type", "text", "id", "inputBarcodeScanner", "aria-describedby", "passwordHelpBlock", 1, "form-control", 3, "value"], ["id", "passwordHelpBlock", 1, "form-text"], [1, "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], ["style", "color:red", 4, "ngIf"], [3, "value", "codes", "errorThreshold", "valueChange", "exception"], [2, "color", "red"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "app-top-bar");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](4, "input", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](6, " Bitte Barcode scannen oder eingeben\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "div", 1)(3, "p")(4, "ngb-alert", 2)(5, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](6, "S\u00E4ule: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](7, "div", 4)(8, "button", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function AppComponent_Template_button_click_8_listener() { return ctx.abschicken(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Ladevorgang Best\u00E4tigen");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](11, AppComponent_p_11_Template, 2, 0, "p", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "ngx-barcode-scanner", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("valueChange", function AppComponent_Template_ngx_barcode_scanner_valueChange_12_listener($event) { return ctx.value = $event; })("valueChange", function AppComponent_Template_ngx_barcode_scanner_valueChange_12_listener() { return ctx.onValueChange(); })("exception", function AppComponent_Template_ngx_barcode_scanner_exception_12_listener($event) { return ctx.onError($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Barcode");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](10, "input", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](12, " Bitte Barcode scannen oder eingeben\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](13, "div", 6)(14, "button", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function AppComponent_Template_button_click_14_listener() { return ctx.abschicken(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](15, "Ladevorgang Best\u00E4tigen");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](17, AppComponent_p_17_Template, 2, 0, "p", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "ngx-barcode-scanner", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("valueChange", function AppComponent_Template_ngx_barcode_scanner_valueChange_18_listener($event) { return ctx.value = $event; })("valueChange", function AppComponent_Template_ngx_barcode_scanner_valueChange_18_listener() { return ctx.onValueChange(); })("exception", function AppComponent_Template_ngx_barcode_scanner_exception_18_listener($event) { return ctx.onError($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](13, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](19, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("dismissible", false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"]("", ctx.message, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpropertyInterpolate"]("value", ctx.value);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.isError == true);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("value", ctx.value)("codes", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction0"](5, _c0))("errorThreshold", 0.1);
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_1__.NgxBarcodeScannerComponent, _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterOutlet, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_2__.TopBarComponent], styles: ["ngx-barcode-scanner[_ngcontent-%COMP%]{\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-form-field[_ngcontent-%COMP%] {\r\n\r\n  width: 50%;\r\n  font-weight: bold;\r\n  padding: 10px;\r\n  }\r\n\r\n[_nghost-%COMP%] {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n\r\nh1[_ngcontent-%COMP%]{\r\n    padding: 10px;\r\n\r\n  }\r\n\r\nh2[_ngcontent-%COMP%]{\r\n  padding: 10px;\r\n}\r\n\r\n.content[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.reihe-button-row[_ngcontent-%COMP%]{\r\n  float:left\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBOztFQUVFLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsYUFBYTtFQUNiOztBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7RUFDekI7O0FBRUE7SUFDRSxhQUFhOztFQUVmOztBQUVGO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxRQUFRO0VBRVIsZ0NBQWdDO0FBQ2xDOztBQUNBO0VBQ0U7QUFDRiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm5neC1iYXJjb2RlLXNjYW5uZXJ7XHJcbiAgcGFkZGluZzogNXB4O1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG5tYXQtZm9ybS1maWVsZCB7XHJcblxyXG4gIHdpZHRoOiA1MCU7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICB9XHJcbiAgOmhvc3Qge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcclxuICB9XHJcblxyXG4gIGgxe1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuXHJcbiAgfVxyXG5cclxuaDJ7XHJcbiAgcGFkZGluZzogMTBweDtcclxufVxyXG5cclxuLmNvbnRlbnQge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBsZWZ0OiA1MCU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxufVxyXG4ucmVpaGUtYnV0dG9uLXJvd3tcclxuICBmbG9hdDpsZWZ0XHJcbn1cclxuIl19 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("value", ctx.value)("codes", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction0"](7, _c0))("errorThreshold", 0.1);
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_1__.NgxBarcodeScannerComponent, _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterOutlet, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbAlert, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_2__.TopBarComponent], styles: ["ngx-barcode-scanner[_ngcontent-%COMP%]{\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-form-field[_ngcontent-%COMP%] {\r\n\r\n  width: 50%;\r\n  font-weight: bold;\r\n  padding: 10px;\r\n  }\r\n\r\n[_nghost-%COMP%] {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n\r\nh1[_ngcontent-%COMP%]{\r\n    padding: 10px;\r\n\r\n  }\r\n\r\nh2[_ngcontent-%COMP%]{\r\n  padding: 10px;\r\n}\r\n\r\n.content[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.reihe-button-row[_ngcontent-%COMP%]{\r\n  float:left\r\n}\r\n\r\n.container-fluid[_ngcontent-%COMP%]{\r\n  overflow: hidden;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBOztFQUVFLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsYUFBYTtFQUNiOztBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7RUFDekI7O0FBRUE7SUFDRSxhQUFhOztFQUVmOztBQUVGO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxRQUFRO0VBRVIsZ0NBQWdDO0FBQ2xDOztBQUNBO0VBQ0U7QUFDRjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm5neC1iYXJjb2RlLXNjYW5uZXJ7XHJcbiAgcGFkZGluZzogNXB4O1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG5tYXQtZm9ybS1maWVsZCB7XHJcblxyXG4gIHdpZHRoOiA1MCU7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICB9XHJcbiAgOmhvc3Qge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcclxuICB9XHJcblxyXG4gIGgxe1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuXHJcbiAgfVxyXG5cclxuaDJ7XHJcbiAgcGFkZGluZzogMTBweDtcclxufVxyXG5cclxuLmNvbnRlbnQge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBsZWZ0OiA1MCU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcclxufVxyXG4ucmVpaGUtYnV0dG9uLXJvd3tcclxuICBmbG9hdDpsZWZ0XHJcbn1cclxuXHJcbi5jb250YWluZXItZmx1aWR7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB9XHJcbiJdfQ== */"] });
 
 
 /***/ }),
