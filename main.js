@@ -374,20 +374,28 @@ class NgbdModalContent {
         console.error(error);
         this.isError = true;
     }
+    lichtAn() {
+        console.log("HALLO");
+        _ericblade_quagga2__WEBPACK_IMPORTED_MODULE_1___default().CameraAccess.enableTorch();
+    }
 }
 NgbdModalContent.ɵfac = function NgbdModalContent_Factory(t) { return new (t || NgbdModalContent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbActiveModal), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService)); };
-NgbdModalContent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: NgbdModalContent, selectors: [["ngbd-modal-content"]], standalone: true, features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵStandaloneFeature"]], decls: 6, vars: 4, consts: [["fullscreen", "true", 1, "modal-header"], [1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "btn-close", 3, "click"], ["fullscreen", "true", 1, "modal-body"], [3, "value", "codes", "errorThreshold", "valueChange", "exception"]], template: function NgbdModalContent_Template(rf, ctx) { if (rf & 1) {
+NgbdModalContent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: NgbdModalContent, selectors: [["ngbd-modal-content"]], standalone: true, features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵStandaloneFeature"]], decls: 8, vars: 4, consts: [["fullscreen", "true", 1, "modal-header"], [1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "btn-close", 3, "click"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], ["fullscreen", "true", 1, "modal-body"], [3, "value", "codes", "errorThreshold", "valueChange", "exception"]], template: function NgbdModalContent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, "Bitte Barcode in Kamera halten");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "button", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function NgbdModalContent_Template_button_click_3_listener() { return ctx.activeModal.dismiss("Cross click"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function NgbdModalContent_Template_button_click_4_listener() { return ctx.lichtAn(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](5, "Lampe");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 3)(5, "ngx-barcode-scanner", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("valueChange", function NgbdModalContent_Template_ngx_barcode_scanner_valueChange_5_listener($event) { return ctx.value = $event; })("valueChange", function NgbdModalContent_Template_ngx_barcode_scanner_valueChange_5_listener() { return ctx.onValueChange(); })("exception", function NgbdModalContent_Template_ngx_barcode_scanner_exception_5_listener($event) { return ctx.onError($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](6, "div", 4)(7, "ngx-barcode-scanner", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("valueChange", function NgbdModalContent_Template_ngx_barcode_scanner_valueChange_7_listener($event) { return ctx.value = $event; })("valueChange", function NgbdModalContent_Template_ngx_barcode_scanner_valueChange_7_listener() { return ctx.onValueChange(); })("exception", function NgbdModalContent_Template_ngx_barcode_scanner_exception_7_listener($event) { return ctx.onError($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("value", ctx.value)("codes", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](3, _c0))("errorThreshold", 0.1);
     } }, dependencies: [_projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_module__WEBPACK_IMPORTED_MODULE_0__.NgxBarcodeScannerModule, _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_3__.NgxBarcodeScannerComponent], encapsulation: 2 });
 class AppComponent {
@@ -447,7 +455,6 @@ class AppComponent {
     open() {
         const modalRef = this.modalService.open(NgbdModalContent);
         modalRef.componentInstance.name = 'World';
-        _ericblade_quagga2__WEBPACK_IMPORTED_MODULE_1___default().CameraAccess.enableTorch();
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbModal)); };
