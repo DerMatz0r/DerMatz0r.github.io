@@ -465,43 +465,44 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbModal)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵNgOnChangesFeature"]], decls: 46, vars: 4, consts: [[1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], [1, "d-flex", "justify-content-center"], [1, "card"], [1, "card-body"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "col"], ["href", "url"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](3, "app-top-bar");
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵNgOnChangesFeature"]], decls: 47, vars: 4, consts: [["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], [1, "d-flex", "justify-content-center"], [1, "card"], [1, "card-body"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "col"], ["href", "url"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "meta", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "div", 1)(2, "div", 2)(3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](4, "app-top-bar");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 1)(5, "div", 3)(6, "div", 4)(7, "div", 5)(8, "div", 6)(9, "h2")(10, "u");
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](11, "Lades\u00E4ule:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](5, "div", 2)(6, "div", 4)(7, "div", 5)(8, "div", 6)(9, "div", 7)(10, "h2")(11, "u");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](12, "Lades\u00E4ule:");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](13, "p")(14, "ngb-alert", 7)(15, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](14, "p")(15, "ngb-alert", 8)(16, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](17);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](17, "div", 8)(18, "label", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](19, "Erkannter Barcode");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](18, "div", 9)(19, "label", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](20, "Erkannter Barcode");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](20, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](21, "input", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](22, "button", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AppComponent_Template_button_click_22_listener() { return ctx.open(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](23, "img", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](21, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](22, "input", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](23, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AppComponent_Template_button_click_23_listener() { return ctx.open(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](24, "img", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 14)(25, "button", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AppComponent_Template_button_click_25_listener() { return ctx.abschicken(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](26, "Ladevorgang Best\u00E4tigen");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](25, "div", 15)(26, "button", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AppComponent_Template_button_click_26_listener() { return ctx.abschicken(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](27, "Ladevorgang Best\u00E4tigen");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](27, "div", 1)(28, "div", 16)(29, "div", 17)(30, "footer", 18)(31, "div", 19)(32, "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](33, "Copyright \u00A9 Robotron Datenbank Software GmbH");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](28, "div", 2)(29, "div", 17)(30, "div", 18)(31, "footer", 19)(32, "div", 20)(33, "small");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](34, "Copyright \u00A9 Robotron Datenbank Software GmbH");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](34, "div", 19)(35, "div", 3)(36, "div", 1)(37, "div", 20)(38, "small")(39, "a", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](40, "Impressum");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](35, "div", 20)(36, "div", 4)(37, "div", 2)(38, "div", 21)(39, "small")(40, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](41, "Impressum");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](41, "div", 20)(42, "small")(43, "a", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](44, "Datenschutz");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](42, "div", 21)(43, "small")(44, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](45, "Datenschutz");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()()()()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](45, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](46, "router-outlet");
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", ctx.saeuleID, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("dismissible", false);
@@ -509,7 +510,7 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"]("", ctx.fehlermeldung, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpropertyInterpolate"]("value", ctx.value);
-    } }, dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterOutlet, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbAlert, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_4__.TopBarComponent], styles: ["ngx-barcode-scanner[_ngcontent-%COMP%]{\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-form-field[_ngcontent-%COMP%] {\r\n\r\n  width: 50%;\r\n  font-weight: bold;\r\n  padding: 10px;\r\n  }\r\n\r\n[_nghost-%COMP%] {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n\r\n.card[_ngcontent-%COMP%] {\r\n    align-self: center;\r\n    position: absolute;\r\n    top: 10%;\r\n\r\n  }\r\n\r\n.reihe-button-row[_ngcontent-%COMP%]{\r\n  float:left\r\n}\r\n\r\n.container-fluid[_ngcontent-%COMP%]{\r\n  overflow: hidden;\r\n  }\r\n\r\n.content2[_ngcontent-%COMP%]{\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.footerRobotron[_ngcontent-%COMP%]{\r\n  background: #314869;\r\n}\r\n\r\n.card[_ngcontent-%COMP%]{\r\n  width: 75%;\r\n}\r\n\r\n.buttonzeile[_ngcontent-%COMP%]{\r\n  width: 99.99%;\r\n  margin-left:0.5px;\r\n}\r\n\r\nhtml[_ngcontent-%COMP%], body[_ngcontent-%COMP%]\u00A0{\r\n  overflow: auto;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBOztFQUVFLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsYUFBYTtFQUNiOztBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7RUFDekI7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLFFBQVE7O0VBRVY7O0FBRUY7RUFDRTtBQUNGOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCOztBQUVGO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUNBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUNBO0VBQ0UsVUFBVTtBQUNaOztBQUNBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJuZ3gtYmFyY29kZS1zY2FubmVye1xyXG4gIHBhZGRpbmc6IDVweDtcclxuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxubWF0LWZvcm0tZmllbGQge1xyXG5cclxuICB3aWR0aDogNTAlO1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgfVxyXG4gIDpob3N0IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbiAgfVxyXG5cclxuICAuY2FyZCB7XHJcbiAgICBhbGlnbi1zZWxmOiBjZW50ZXI7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDEwJTtcclxuXHJcbiAgfVxyXG5cclxuLnJlaWhlLWJ1dHRvbi1yb3d7XHJcbiAgZmxvYXQ6bGVmdFxyXG59XHJcblxyXG4uY29udGFpbmVyLWZsdWlke1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgfVxyXG5cclxuLmNvbnRlbnQye1xyXG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XHJcbn1cclxuLmZvb3RlclJvYm90cm9ue1xyXG4gIGJhY2tncm91bmQ6ICMzMTQ4Njk7XHJcbn1cclxuLmNhcmR7XHJcbiAgd2lkdGg6IDc1JTtcclxufVxyXG4uYnV0dG9uemVpbGV7XHJcbiAgd2lkdGg6IDk5Ljk5JTtcclxuICBtYXJnaW4tbGVmdDowLjVweDtcclxufVxyXG5cclxuaHRtbCwgYm9kecKge1xyXG4gIG92ZXJmbG93OiBhdXRvO1xyXG59XHJcbiJdfQ== */"] });
+    } }, dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterOutlet, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbAlert, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_4__.TopBarComponent], styles: ["ngx-barcode-scanner[_ngcontent-%COMP%]{\r\n  padding: 5px;\r\n  margin-right: 10px;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-form-field[_ngcontent-%COMP%] {\r\n\r\n  width: 50%;\r\n  font-weight: bold;\r\n  padding: 10px;\r\n  }\r\n\r\n[_nghost-%COMP%] {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n  }\r\n\r\n.card[_ngcontent-%COMP%] {\r\n\r\n    position: absolute;\r\n    top: 20%;\r\n\r\n  }\r\n\r\n.reihe-button-row[_ngcontent-%COMP%]{\r\n  float:left\r\n}\r\n\r\n.container-fluid[_ngcontent-%COMP%]{\r\n  overflow: hidden;\r\n  }\r\n\r\n.content2[_ngcontent-%COMP%]{\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.footerRobotron[_ngcontent-%COMP%]{\r\n  background: #314869;\r\n}\r\n\r\n.card[_ngcontent-%COMP%]{\r\n  width: 75%;\r\n}\r\n\r\n.buttonzeile[_ngcontent-%COMP%]{\r\n  width: 99.99%;\r\n  margin-left:0.5px;\r\n}\r\n\r\nhtml[_ngcontent-%COMP%], body[_ngcontent-%COMP%]\u00A0{\r\n  overflow: auto;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBOztFQUVFLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsYUFBYTtFQUNiOztBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7RUFDekI7O0FBRUE7O0lBRUUsa0JBQWtCO0lBQ2xCLFFBQVE7O0VBRVY7O0FBRUY7RUFDRTtBQUNGOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCOztBQUVGO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUNBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUNBO0VBQ0UsVUFBVTtBQUNaOztBQUNBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJuZ3gtYmFyY29kZS1zY2FubmVye1xyXG4gIHBhZGRpbmc6IDVweDtcclxuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxubWF0LWZvcm0tZmllbGQge1xyXG5cclxuICB3aWR0aDogNTAlO1xyXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgfVxyXG4gIDpob3N0IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbiAgfVxyXG5cclxuICAuY2FyZCB7XHJcblxyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiAyMCU7XHJcblxyXG4gIH1cclxuXHJcbi5yZWloZS1idXR0b24tcm93e1xyXG4gIGZsb2F0OmxlZnRcclxufVxyXG5cclxuLmNvbnRhaW5lci1mbHVpZHtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIH1cclxuXHJcbi5jb250ZW50MntcclxuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcbi5mb290ZXJSb2JvdHJvbntcclxuICBiYWNrZ3JvdW5kOiAjMzE0ODY5O1xyXG59XHJcbi5jYXJke1xyXG4gIHdpZHRoOiA3NSU7XHJcbn1cclxuLmJ1dHRvbnplaWxle1xyXG4gIHdpZHRoOiA5OS45OSU7XHJcbiAgbWFyZ2luLWxlZnQ6MC41cHg7XHJcbn1cclxuXHJcbmh0bWwsIGJvZHnCoHtcclxuICBvdmVyZmxvdzogYXV0bztcclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
