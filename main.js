@@ -418,27 +418,29 @@ class AppComponent {
         console.log(this.saeuleID);
     }
     ngOnInit() {
-        console.log("ngOnInit wird ausgeführt");
+        //console.log("ngOnInit wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => this.saeuleID = saeuleID);
+        this.getScreenWidth = window.innerWidth;
+        this.getScreenHeight = window.innerHeight;
     }
     ngAfterContentInit() {
-        console.log("ngAfterContentInit wird ausgeführt");
+        //console.log("ngAfterContentInit wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => this.saeuleID = saeuleID);
     }
     ngOnChanges(changes) {
-        console.log("ngOnChanges wird ausgeführt");
+        //console.log("ngOnChanges wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => this.saeuleID = saeuleID);
     }
     ngAfterContentChecked() {
-        console.log("ngAfterContentChecked wird ausgeführt");
+        //console.log("ngAfterContentChecked wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => this.saeuleID = saeuleID);
     }
     ngAfterViewInit() {
-        console.log("ngAfterViewInit wird ausgeführt");
+        //console.log("ngAfterViewInit wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => this.saeuleID = saeuleID);
     }
     ngAfterViewChecked() {
-        console.log("ngAfterViewChecked wird ausgeführt");
+        //console.log("ngAfterViewChecked wird ausgeführt");
         this.data.currentSaeuleID.subscribe(saeuleID => { this.saeuleID = saeuleID; });
     }
     ngOnDestroy() {
@@ -459,13 +461,21 @@ class AppComponent {
         console.log('Barcode:');
         console.log(document.getElementById("inputBarcodeScanner").value); //Inhalt des Matinputfield wird hier abgerufen
     }
+    onWindowResize() {
+        this.getScreenWidth = window.innerWidth;
+        this.getScreenHeight = window.innerHeight;
+        console.log("Width: ", this.getScreenWidth);
+        console.log("Height: ", this.getScreenHeight);
+    }
     open() {
         const modalRef = this.modalService.open(NgbdModalContent);
         modalRef.componentInstance.name = 'World';
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__.NgbModal)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵNgOnChangesFeature"]], decls: 47, vars: 4, consts: [["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], ["id", "reihe2", 1, "row"], [1, "d-flex", "justify-content-center"], [1, "card"], [1, "card-body"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "col"], ["href", "url"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], hostBindings: function AppComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("resize", function AppComponent_resize_HostBindingHandler($event) { return ctx.onWindowResize($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresolveWindow"]);
+    } }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵNgOnChangesFeature"]], decls: 47, vars: 6, consts: [["name", "viewport", 3, "content"], [1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], ["id", "reihe2", 1, "row"], [1, "d-flex", "justify-content-center"], [1, "card"], [1, "card-body"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "col"], ["href", "url"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "meta", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "div", 1)(2, "div", 2)(3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](4, "app-top-bar");
@@ -502,6 +512,7 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()()()()()()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](46, "router-outlet");
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpropertyInterpolate2"]("content", "width=", ctx.getScreenWidth, ",height=", ctx.getScreenHeight, ", initial-scale=1.0");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", ctx.saeuleID, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
