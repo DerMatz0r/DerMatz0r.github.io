@@ -399,7 +399,7 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpropertyInterpolate2"]("content", "width=", ctx.getScreenWidth, ",height=", ctx.getScreenHeight, ", initial-scale=1.0");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](3, _c0, ctx.isPhonePortrait));
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterOutlet, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterLinkWithHref, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterLinkActive, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_0__.TopBarComponent], styles: [".footerRobotron[_ngcontent-%COMP%]{\r\n  background: #314869;\r\n}\r\n\r\na[_ngcontent-%COMP%]{\r\ncolor: white;\r\nopacity: 0.5;\r\n}\r\n\r\n.mittlereZeile[_ngcontent-%COMP%]{\r\n  margin-bottom: -5.95%;\r\n}\r\n\r\n.mittlereZeile.is-phone-portrait[_ngcontent-%COMP%]{\r\n  margin-bottom:-23%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtBQUNBLFlBQVk7QUFDWixZQUFZO0FBQ1o7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEIiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLmZvb3RlclJvYm90cm9ue1xyXG4gIGJhY2tncm91bmQ6ICMzMTQ4Njk7XHJcbn1cclxuXHJcbmF7XHJcbmNvbG9yOiB3aGl0ZTtcclxub3BhY2l0eTogMC41O1xyXG59XHJcblxyXG4ubWl0dGxlcmVaZWlsZXtcclxuICBtYXJnaW4tYm90dG9tOiAtNS45NSU7XHJcbn1cclxuXHJcbi5taXR0bGVyZVplaWxlLmlzLXBob25lLXBvcnRyYWl0e1xyXG4gIG1hcmdpbi1ib3R0b206LTIzJTtcclxufVxyXG4iXX0= */"] });
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterOutlet, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterLinkWithHref, _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterLinkActive, _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_0__.TopBarComponent], styles: [".footerRobotron[_ngcontent-%COMP%]{\r\n  background: #314869;\r\n}\r\n\r\na[_ngcontent-%COMP%]{\r\ncolor: white;\r\nopacity: 0.5;\r\n}\r\n\r\n.mittlereZeile[_ngcontent-%COMP%]{\r\n  margin-bottom: -4.65%;\r\n\r\n}\r\n\r\n.mittlereZeile.is-phone-portrait[_ngcontent-%COMP%]{\r\n  margin-bottom:-23%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtBQUNBLFlBQVk7QUFDWixZQUFZO0FBQ1o7O0FBRUE7RUFDRSxxQkFBcUIsQ0FBQyxxQkFBcUI7O0FBRTdDOztBQUNBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5mb290ZXJSb2JvdHJvbntcclxuICBiYWNrZ3JvdW5kOiAjMzE0ODY5O1xyXG59XHJcblxyXG5he1xyXG5jb2xvcjogd2hpdGU7XHJcbm9wYWNpdHk6IDAuNTtcclxufVxyXG5cclxuLm1pdHRsZXJlWmVpbGV7XHJcbiAgbWFyZ2luLWJvdHRvbTogLTQuNjUlOy8qLTUuOTUlOyBmw7xyIExhcHRvcCovXHJcblxyXG59XHJcbi5taXR0bGVyZVplaWxlLmlzLXBob25lLXBvcnRyYWl0e1xyXG4gIG1hcmdpbi1ib3R0b206LTIzJTtcclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
@@ -510,12 +510,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ericblade_quagga2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ericblade_quagga2__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 4666);
 /* harmony import */ var _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../projects/ngx-barcode-scanner/src/lib/ngx-barcode-scanner.module */ 8424);
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/layout */ 3278);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 4534);
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ 1502);
 /* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/cdk/platform */ 9107);
 /* harmony import */ var _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../projects/ngx-barcode-scanner/src/lib/ngx-barcode-scanner.component */ 1377);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 124);
+
+
 
 
 
@@ -538,6 +541,7 @@ function NgbdModalContent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
 } }
 const _c0 = function () { return ["i2of5"]; };
+const _c1 = function (a0) { return { "is-phone-portrait": a0 }; };
 class NgbdModalContent {
     constructor(activeModal, data, platform) {
         this.activeModal = activeModal;
@@ -591,18 +595,27 @@ NgbdModalContent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4_
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("value", ctx.value)("codes", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction0"](4, _c0))("errorThreshold", 0.1);
     } }, dependencies: [_projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_module__WEBPACK_IMPORTED_MODULE_1__.NgxBarcodeScannerModule, _projects_ngx_barcode_scanner_src_lib_ngx_barcode_scanner_component__WEBPACK_IMPORTED_MODULE_3__.NgxBarcodeScannerComponent, _angular_common__WEBPACK_IMPORTED_MODULE_7__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf], encapsulation: 2 });
 class BarcodeFormularComponent {
-    constructor(modalService, data, route) {
+    constructor(modalService, data, route, responsive) {
         this.modalService = modalService;
         this.data = data;
         this.route = route;
+        this.responsive = responsive;
         this.isError = false;
         this.scannerSichtbar = true;
         this.saeuleID = this.route.snapshot.paramMap.get('id');
         this.fehlermeldung = "Bitte Barcode scannen oder eingeben.";
+        this.isPhonePortrait = false;
         this.data.currentBarcode.subscribe(barcode => this.value = barcode);
     }
     ;
     ngOnInit() {
+        this.responsive.observe(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__.Breakpoints.HandsetPortrait)
+            .subscribe(result => {
+            this.isPhonePortrait = false;
+            if (result.matches) {
+                this.isPhonePortrait = true;
+            }
+        });
     }
     abschicken() {
         console.log('ID Säule:');
@@ -619,8 +632,8 @@ class BarcodeFormularComponent {
         this.data.currentBarcode.subscribe(barcode => this.value = barcode).unsubscribe();
     }
 }
-BarcodeFormularComponent.ɵfac = function BarcodeFormularComponent_Factory(t) { return new (t || BarcodeFormularComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModal), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.ActivatedRoute)); };
-BarcodeFormularComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: BarcodeFormularComponent, selectors: [["app-barcode-formular"]], decls: 22, vars: 4, consts: [[1, "d-flex", "justify-content-center"], [1, "card", "shadow"], [1, "card-body"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"]], template: function BarcodeFormularComponent_Template(rf, ctx) { if (rf & 1) {
+BarcodeFormularComponent.ɵfac = function BarcodeFormularComponent_Factory(t) { return new (t || BarcodeFormularComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModal), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_9__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__.BreakpointObserver)); };
+BarcodeFormularComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: BarcodeFormularComponent, selectors: [["app-barcode-formular"]], decls: 22, vars: 7, consts: [[1, "d-flex", "justify-content-center"], [1, "card", "shadow"], [1, "card-body", 3, "ngClass"], [1, "content"], [3, "dismissible"], [1, "content2"], ["for", "inputPassword5", 1, "form-label"], [1, "input-group", "mb-3"], ["type", "text", "id", "inputBarcodeScanner", "aria-label", "Erkannter Barcode", "aria-describedby", "button-addon2", 1, "form-control", 3, "value"], ["type", "button", "id", "button-addon2", 1, "btn", "btn-outline-secondary", 3, "click"], ["src", "assets/graphics/camera.svg", "width", "30"], [1, "buttonzeile", "row", "justify-content-center"], ["type", "button", 1, "btn", "btn-primary", "btn-lg", 3, "click"]], template: function BarcodeFormularComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h2")(5, "u");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "Lades\u00E4ule:");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
@@ -643,7 +656,9 @@ BarcodeFormularComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](21, "Ladevorgang starten");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction1"](5, _c1, ctx.isPhonePortrait));
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", ctx.saeuleID, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("dismissible", false);
@@ -651,7 +666,7 @@ BarcodeFormularComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("", ctx.fehlermeldung, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpropertyInterpolate"]("value", ctx.value);
-    } }, dependencies: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbAlert], styles: [".buttonzeile[_ngcontent-%COMP%]{\r\n  width: 99.99%;\r\n  margin-left:0.5px;\r\n}\r\n.card[_ngcontent-%COMP%]{\r\n  width: 75%;\r\n  position: absolute;\r\n  top: 25%;\r\n\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhcmNvZGUtZm9ybXVsYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTs7QUFFViIsImZpbGUiOiJiYXJjb2RlLWZvcm11bGFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uemVpbGV7XHJcbiAgd2lkdGg6IDk5Ljk5JTtcclxuICBtYXJnaW4tbGVmdDowLjVweDtcclxufVxyXG4uY2FyZHtcclxuICB3aWR0aDogNzUlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDI1JTtcclxuXHJcbn1cclxuIl19 */"] });
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbAlert], styles: [".buttonzeile[_ngcontent-%COMP%]{\r\n  width: 99.99%;\r\n  margin-left:0.5px;\r\n}\r\n.card[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n  position: absolute;\r\n  top: 25%;\r\n\r\n}\r\n.card.is-phone-portrait[_ngcontent-%COMP%]{\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 25%;\r\n\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhcmNvZGUtZm9ybXVsYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTs7QUFFVjtBQUVBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixRQUFROztBQUVWIiwiZmlsZSI6ImJhcmNvZGUtZm9ybXVsYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5idXR0b256ZWlsZXtcclxuICB3aWR0aDogOTkuOTklO1xyXG4gIG1hcmdpbi1sZWZ0OjAuNXB4O1xyXG59XHJcbi5jYXJke1xyXG4gIHdpZHRoOiA1MCU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMjUlO1xyXG5cclxufVxyXG5cclxuLmNhcmQuaXMtcGhvbmUtcG9ydHJhaXR7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMjUlO1xyXG5cclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
