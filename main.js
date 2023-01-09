@@ -365,21 +365,9 @@ class AppComponent {
         this.getScreenHeight = window.innerHeight;
         console.log("Handy: ", this.isPhonePortrait);
     }
-    //Hier wird die Höhe und Breite des Bildschirms ermittelt um auf Änderungen
-    //wie auf das erscheinen eines Keyboards reagieren zu können
-    //Die Lösung ist nicht optimal funktioniert aber irgendwie
-    //Sollte gegebenfalls überarbeitet werden
-    onWindowResize() {
-        this.getScreenWidth = window.innerWidth;
-        this.getScreenHeight = window.innerHeight;
-        console.log("Width: ", this.getScreenWidth);
-        console.log("Height: ", this.getScreenHeight);
-    }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__.BreakpointObserver)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], hostBindings: function AppComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("resize", function AppComponent_resize_HostBindingHandler($event) { return ctx.onWindowResize($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresolveWindow"]);
-    } }, decls: 27, vars: 5, consts: [["name", "viewport", 3, "content"], [1, "alles"], [1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], [1, "mittlereZeile", 3, "ngClass"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "d-flex", "justify-content-center"], [1, "col"], ["routerLink", "sonstiges/Impressum", "routerLinkActive", "active", "ariaCurrentWhenActive", "page"], ["routerLink", "sonstiges/Datenschutz", "routerLinkActive", "active", "ariaCurrentWhenActive", "page"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 27, vars: 5, consts: [["name", "viewport", 3, "content"], [1, "alles"], [1, "container-fluid"], [1, "row"], [1, "container-fluid", "p-0", "min-vh-100", "d-flex", "flex-column"], [1, "mittlereZeile", 3, "ngClass"], [1, "container-fluid", "p-0"], [1, "footerRobotron"], ["id", "sticky-footer", 1, "flex-shrink-0", "py-4", "text-white-50"], [1, "container", "text-center"], [1, "d-flex", "justify-content-center"], [1, "col"], ["routerLink", "sonstiges/Impressum", "routerLinkActive", "active", "ariaCurrentWhenActive", "page"], ["routerLink", "sonstiges/Datenschutz", "routerLinkActive", "active", "ariaCurrentWhenActive", "page"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "meta", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](5, "app-top-bar");
